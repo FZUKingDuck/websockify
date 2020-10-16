@@ -254,6 +254,8 @@ Traffic Legend:
 
             if target in ins:
                 # Receive target data, encode it and queue for client
+                print(target)
+                print('is close')
                 buf = target.recv(self.buffer_size)
                 if len(buf) == 0:
                     if self.verbose:

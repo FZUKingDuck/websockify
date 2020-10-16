@@ -1,6 +1,7 @@
 from __future__ import print_function
 import os
 import sys
+from token_plugins_redis import TokenByRedis
 
 class BasePlugin(object):
     def __init__(self, src):
